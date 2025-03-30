@@ -1,3 +1,7 @@
 Working with Webcams on linux:-
 https://askubuntu.com/questions/348838/how-to-check-available-webcams-from-the-command-line
 v4l2-ctl --all To view all the details of your camera
+
+gst-launch-1.0 v4l2src device="/dev/video2" ! videoconvert ! x264enc tune=zerolatency bitrate=1000 speed-preset=ultrafast-
+Enconding via gstream
+
